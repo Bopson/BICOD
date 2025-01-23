@@ -54,160 +54,166 @@
 }
 
 
-
-        .login-container {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .register-link {
-            text-align: center;
-            margin-top: 15px;
-        }
-        .register-link a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .register-link a:hover {
-            text-decoration: underline;
-        }
+    .container2 {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      box-sizing: border-box;
+    }
+    .container2 h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group input[type="file"] {
+      padding: 3px;
+    }
+    .form-group input[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    @media (min-width: 768px) {
+      .container2 {
+        padding: 30px;
+      }
+      .form-group input {
+        padding: 12px;
+      }
+      .form-group input[type="submit"] {
+        padding: 12px;
+      }
+    }
 
   </style>
 </head>
 
 <body class="service-details-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img style="transform: scale(1.9) !important;" src="assets/img/logo1.jpeg" alt="">
-        <!-- <h1 class="sitename">BICOD</h1> -->
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <!-- <li><a href="#services">Services</a></li> -->
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-         
-          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    
+          <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <img style="transform: scale(1.9) !important;" src="assets/img/logo1.jpeg" alt="">
+            <!-- <h1 class="sitename">BICOD</h1> -->
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
             <ul>
-              <li class="dropdown"><a href="santé.html"><span>Ingénieurie de la Santé</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="materiels.html">Matériels et équipements médicaux</a></li>
-                  <li><a href="pharmexlab.html">Pharmex Lab</a></li>
-                  <li><a href="calender.html">Analyse et modelisation de données de santé</a></li>
-                  <li><a href="calender.html">Conception et évaluation des systèmes de santé</a></li>
-                  <li><a href="calender.html">Evaluation et certification des dispositifs médicaux</a></li>
-                </ul>
-              </li>
-
-              <li class="dropdown"><a href="developpement_durable.html"><span>Développement Durable</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="calender.html">Evaluation des impacts environnementaux et sociaux</a></li>
-                  <li><a href="calender.html">Conseil en matière des responsabilités sociétales des entreprises (RSE)</a></li>
-                  <li><a href="calender.html">Partenaires de mise en oeuvre et projets</a></li>
-                 
-                </ul>
-              </li>
-
-
-              
+              <li><a href="#hero" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="#services">Services</a></li> -->
+              <!-- <li><a href="#portfolio">Portfolio</a></li> -->
              
-              <li><a href="mystery_shoping.html">Mystery Shoping</a></li>
-
-
-              <li class="dropdown"><a href="developpement_durable.html"><span>Customer Experience Excellence</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="calender.html">International Customer Experience Standard</a></li>
-                  <li><a href="calender.html">International Digital Customer Experience Standard (IDCXS2022)
-                  </a></li>
-                  <li><a href="calender.html">International Employee Happiness and Wellbeing Standard (IEHWS2023)</a></li>
+                  <li class="dropdown"><a href="santé.html"><span>Ingénieurie de la Santé</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="materiels.html">Matériels et équipements médicaux</a></li>
+                      <li><a href="pharmexlab.html">Pharmex Lab</a></li>
+                      <li><a href="calender.html">Analyse et modelisation de données de santé</a></li>
+                      <li><a href="calender.html">Conception et évaluation des systèmes de santé</a></li>
+                      <li><a href="calender.html">Evaluation et certification des dispositifs médicaux</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="dropdown"><a href="developpement_durable.html"><span>Développement Durable</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="calender.html">Evaluation des impacts environnementaux et sociaux</a></li>
+                      <li><a href="calender.html">Conseil en matière des responsabilités sociétales des entreprises (RSE)</a></li>
+                      <li><a href="calender.html">Partenaires de mise en oeuvre et projets</a></li>
+                     
+                    </ul>
+                  </li>
+    
+    
+                  
                  
+                  <li><a href="mystery_shoping.html">Mystery Shoping</a></li>
+    
+    
+                  <li class="dropdown"><a href="developpement_durable.html"><span>Customer Experience Excellence</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="calender.html">International Customer Experience Standard</a></li>
+                      <li><a href="calender.html">International Digital Customer Experience Standard (IDCXS2022)
+                      </a></li>
+                      <li><a href="calender.html">International Employee Happiness and Wellbeing Standard (IEHWS2023)</a></li>
+                     
+                    </ul>
+                  </li>
+    
+    
+                  <li><a href="securites_informatiques.html">Validation des systèmes informatisés (VSI)</a></li>
+    
+    
+                   <li class="dropdown"><a href="audit.html"><span>Audit</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="calender.html">Audit de marque</a></li>
+                      <li><a href="calender.html">Audit de genre</a></li>
+                      <li><a href="calender.html">Audit d'achat</a></li>
+                      <li><a href="calender.html">Audit des laboratoires</a></li>
+                      <li><a href="calender.html">Audit des bonnes pratiques de stockage et de distribution des produits pharmaceutiques(GSDP)</a></li>
+                    </ul>
+                  </li>
+    
+    
+                  <li class="dropdown"><a href="formation.html"><span>Formation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <!-- <li><a href="calender.html">Système de management de la qualité (SMQ)</a></li>
+                      <li><a href="calender.html">Validation des systèmes informatisés
+                      </a></li>
+                      <li><a href="calender.html">Pharmacovigilance</a></li> -->
+                     
+                    </ul>
+                  </li>
+    
+    
                 </ul>
               </li>
-
-
-              <li><a href="securites_informatiques.html">Validation des systèmes informatisés (VSI)</a></li>
-
-
-               <li class="dropdown"><a href="audit.html"><span>Audit</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="calender.html">Audit de marque</a></li>
-                  <li><a href="calender.html">Audit de genre</a></li>
-                  <li><a href="calender.html">Audit d'achat</a></li>
-                  <li><a href="calender.html">Audit des laboratoires</a></li>
-                  <li><a href="calender.html">Audit des bonnes pratiques de stockage et de distribution des produits pharmaceutiques(GSDP)</a></li>
-                </ul>
-              </li>
-
-
-              <li class="dropdown"><a href="formation.html"><span>Formation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <!-- <li><a href="calender.html">Système de management de la qualité (SMQ)</a></li>
-                  <li><a href="calender.html">Validation des systèmes informatisés
-                  </a></li>
-                  <li><a href="calender.html">Pharmacovigilance</a></li> -->
-                 
-                </ul>
-              </li>
-
-
+              <li><a href="#team">Personnel</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-          </li>
-          <li><a href="#team">Personnel</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+          <a class="cta-btn" href="index.html#about">Commencer</a>
+    
+        </div>
+      </header>
 
-      <a class="cta-btn" href="index.html#about">Commencer</a>
-
-    </div>
-  </header>
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>Développement Durable</h1>
+        <h1>Register</h1>
         <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p> -->
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Développement Durable</li>
+            <li class="current">Créer un compte</li>
           </ol>
         </nav>
       </div>
@@ -230,32 +236,51 @@
               <a href="#">Marketing</a>
             </div> -->
 
-            
 
             <div class="login-container">
-              <h1>Login</h1>
-              <form action="/login" method="POST">
-                  <label for="user-type">Select User Type:</label>
-                  <select id="user-type" name="user_type" required>
-                      <option value="Evaluateur">Evaluateur</option>
-                      <option value="Client">Client</option>
-                  </select>
-      
-                  <label for="username">Username:</label>
-                  <input type="text" id="username" name="username" placeholder="Enter your username" required>
-      
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      
-                  <button type="submit">Login</button>
+            <h1>Créer un compte</h1>
+            
+                <label for="user-type">Select User Type:</label><br>
+                <select id="user-type" name="user_type" required>
+                    <option value="Evaluateur">Evaluateur</option>
+                    <option value="Client">Client</option>
+                </select>
+            </div>
+
+
+            <div class="container2">
+              <!-- <h2>Créer un Compte</h2> -->
+              <form action="/submit_profile" method="POST">
+                <div class="form-group">
+                  <label for="first-name">Prénom</label>
+                  <input type="text" id="first-name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Nom</label>
+                  <input type="text" id="last-name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Adresse e-mail</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <!-- <div class="form-group">
+                  <label for="password">Mot de passe</label>
+                  <input type="password" id="password" name="password" required>
+                </div> -->
+                <div class="form-group">
+                  <label for="birth-date">Date de naissance</label>
+                  <input type="date" id="birth-date" name="birth_date" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Laissez un message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Votre message..." required></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Envoyer">
+                </div>
               </form>
-      
-              <div class="register-link">
-                  <p>Not registered yet? <a href="register.html">Create an account</a></p>
-              </div>
-          </div>
-
-
+            </div>
+            
             
             <!-- <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
             <p>
