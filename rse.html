@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Dewi Bootstrap Template</title>
+  <title>Service Details - Dewi Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -35,110 +35,130 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
+  <style>
+   .arrow {
+    width: 20px;
+    height: 20px;
+    border: solid #ccc;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    border-color: #007BFF;
+    transform: rotate(135deg) scale(1.1);
+}
+
+  </style>
 </head>
 
-<body class="index-page">
+<body class="service-details-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img style="transform: scale(3) !important;" src="assets/img/logo.png" alt="" >
-        <!-- <h1 class="sitename">BICOD</h1> -->
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <!-- <li><a href="#services">Services</a></li> -->
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-         
-          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    
+          <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <img style="transform: scale(3) !important;" src="assets/img/logo.png" alt="" >
+            <!-- <h1 class="sitename">BICOD</h1> -->
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
             <ul>
-              <li class="dropdown"><a href="santé.html"><span>Ingénieurie de la Santé</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="materiels.html">Matériels et équipements médicaux</a></li>
-                  <li><a href="pharmexlab.html">Pharmex Lab</a></li>
-                  <li><a href="analyse.html">Analyse et modelisation de données de santé</a></li>
-                  <li><a href="conception.html">Conception et évaluation des systèmes de santé</a></li>
-                  <li><a href="evaluation.html">Evaluation et certification des dispositifs médicaux</a></li>
-                </ul>
-              </li>
-
-              <li class="dropdown"><a href="developpement_durable.html"><span>Développement Durable</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="Impacts.html">Evaluation des impacts environnementaux et sociaux</a></li>
-                  <li><a href="rse.html">Conseil en matière des responsabilités sociétales des entreprises (RSE)</a></li>
-                  <li><a href="partenaires.html">Partenaires de mise en oeuvre et projets</a></li>
-                 
-                </ul>
-              </li>
-
-
-              
+              <li><a href="#hero" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="#services">Services</a></li> -->
+              <!-- <li><a href="#portfolio">Portfolio</a></li> -->
              
-              <li><a href="mystery_shoping.html">Mystery Shoping</a></li>
-
-
-              <li class="dropdown"><a href="L’excellence de l’expérience client.html"><span>Customer Experience Excellence</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="Normes internationales en matière d’expérience client .html">International Customer Experience Standard</a></li>
-                  <li><a href="Normes internationales en matière d’expérience client sur les plateformes digitales .html">International Digital Customer Experience Standard (IDCXS2022)
-                  </a></li>
-                  <li><a href="Normes internationales de bonheur et de bien-être des salariés .html">International Employee Happiness and Wellbeing Standard (IEHWS2023)</a></li>
+                  <li class="dropdown"><a href="santé.html"><span>Ingénieurie de la Santé</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="materiels.html">Matériels et équipements médicaux</a></li>
+                      <li><a href="pharmexlab.html">Pharmex Lab</a></li>
+                      <li><a href="analyse.html">Analyse et modelisation de données de santé</a></li>
+                      <li><a href="conception.html">Conception et évaluation des systèmes de santé</a></li>
+                      <li><a href="evaluation.html">Evaluation et certification des dispositifs médicaux</a></li>
+                    </ul>
+                  </li>
+    
+                  <li class="dropdown"><a href="developpement_durable.html"><span>Développement Durable</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="Impacts.html">Evaluation des impacts environnementaux et sociaux</a></li>
+                      <li><a href="rse.html">Conseil en matière des responsabilités sociétales des entreprises (RSE)</a></li>
+                      <li><a href="partenaires.html">Partenaires de mise en oeuvre et projets</a></li>
+                     
+                    </ul>
+                  </li>
+    
+    
+                  
                  
+                  <li><a href="mystery_shoping.html">Mystery Shoping</a></li>
+    
+    
+                  <li class="dropdown"><a href="L’excellence de l’expérience client.html"><span>Customer Experience Excellence</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="Normes internationales en matière d’expérience client .html">International Customer Experience Standard</a></li>
+                      <li><a href="Normes internationales en matière d’expérience client sur les plateformes digitales .html">International Digital Customer Experience Standard (IDCXS2022)
+                      </a></li>
+                      <li><a href="Normes internationales de bonheur et de bien-être des salariés .html">International Employee Happiness and Wellbeing Standard (IEHWS2023)</a></li>
+                     
+                    </ul>
+                  </li>
+    
+    
+                  <li><a href="Validation des systèmes informatisés (VSI).html">Validation des systèmes informatisés (VSI)</a></li>
+    
+    
+    
+                  
+                  <li class="dropdown"><a href="formation.html"><span>Formation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <!-- <li><a href="calender.html">Système de management de la qualité (SMQ)</a></li>
+                      <li><a href="calender.html">Validation des systèmes informatisés
+                      </a></li>
+                      <li><a href="calender.html">Pharmacovigilance</a></li> -->
+                     
+                    </ul>
+                  </li>
+    
+                   <li class="dropdown"><a href="audit.html"><span>Audit</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="audit_marque.html">Audit de marque</a></li>
+                      <li><a href="audit_genre.html">Audit de genre</a></li>
+                      <li><a href="audit_achat.html">Audit d'achat</a></li>
+                      <li><a href="audit_laboratoires.html">Audit des laboratoires</a></li>
+                      <li><a href="audit_bonnes_pratiques.html">Audit des bonnes pratiques de stockage <br>et de distribution des produits pharmaceutiques(GSDP)</a></li>
+                    </ul>
+                  </li>
+    
+    
+    
+    
                 </ul>
               </li>
-
-
-              <li><a href="Validation des systèmes informatisés (VSI).html">Validation des systèmes informatisés (VSI)</a></li>
-
-
-
-              
-              <li class="dropdown"><a href="formation.html"><span>Formation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <!-- <li><a href="calender.html">Système de management de la qualité (SMQ)</a></li>
-                  <li><a href="calender.html">Validation des systèmes informatisés
-                  </a></li>
-                  <li><a href="calender.html">Pharmacovigilance</a></li> -->
-                 
-                </ul>
-              </li>
-
-               <li class="dropdown"><a href="audit.html"><span>Audit</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="audit_marque.html">Audit de marque</a></li>
-                  <li><a href="audit_genre.html">Audit de genre</a></li>
-                  <li><a href="audit_achat.html">Audit d'achat</a></li>
-                  <li><a href="audit_laboratoires.html">Audit des laboratoires</a></li>
-                  <li><a href="audit_bonnes_pratiques.html">Audit des bonnes pratiques de stockage <br>et de distribution des produits pharmaceutiques(GSDP)</a></li>
-                </ul>
-              </li>
-
-
-
-
+              <li><a href="#team">Personnel</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-          </li>
-          <li><a href="#team">Personnel</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="cta-btn" href="index.html#about">Commencer</a>
-
-    </div>
-  </header>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+    
+          <a class="cta-btn" href="index.html#about">Commencer</a>
+    
+        </div>
+      </header>
 
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>Audit de genre</h1>
+        <h1>Conseil en matière de responsabilité sociétale des entreprises (RSE)</h1>
         <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p> -->
         <nav class="breadcrumbs">
           <ol>
@@ -158,10 +178,11 @@
 
           <div class="arrow" onclick="location.href='index.html#services';"></div>
 
-          <h2>Audit de genre</h2>
           <p>
+            Transformez votre entreprise avec notre expertise en responsabilité sociétale des entreprises (RSE).  
+<b>BICOD Sarl</b>, vous guide dans l'intégration de pratiques RSE, essentielles pour répondre aux attentes croissantes de vos parties prenantes. Que vous soyez une PME ou un grand groupe, nous vous aidons à élaborer une stratégie durable, à optimiser vos performances sociales et environnementales et à renforcer votre réputation. 
+En choisissant de collaborer avec nous, vous profitez d'une approche personnalisée, d'analyses approfondies, et d'outils innovants pour mesurer et communiquer vos engagements. Ensemble, faisons de votre entreprise un acteur du changement positif et durable.
 
-            L’audit de genre est une évaluation systématique et objective des politiques, programmes, pratiques et processus organisationnels afin d’identifier et de comprendre les différences et inégalités de genre qui peuvent exister. L’objectif d’un tel audit est de garantir que les politiques et les pratiques d’une organisation sont inclusives, équitables et sensibles au genre, et de promouvoir l’égalité de genre.
           </p>
           <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
