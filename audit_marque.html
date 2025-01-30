@@ -53,60 +53,6 @@
     transform: rotate(135deg) scale(1.1);
 }
 
-
-    .container2 {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 90%;
-      max-width: 400px;
-      box-sizing: border-box;
-    }
-    .container2 h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .form-group input[type="file"] {
-      padding: 3px;
-    }
-    .form-group input[type="submit"] {
-      background-color: #007BFF;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      padding: 10px;
-    }
-    .form-group input[type="submit"]:hover {
-      background-color: #0056b3;
-    }
-    @media (min-width: 768px) {
-      .container2 {
-        padding: 30px;
-      }
-      .form-group input {
-        padding: 12px;
-      }
-      .form-group input[type="submit"] {
-        padding: 12px;
-      }
-    }
-
   </style>
 </head>
 
@@ -169,6 +115,8 @@
     
     
 
+
+
                   <li class="dropdown"><a href="formation.html"><span>Formation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                       <!-- <li><a href="calender.html">Système de management de la qualité (SMQ)</a></li>
@@ -178,6 +126,7 @@
                      
                     </ul>
                   </li>
+
 
 
                    <li class="dropdown"><a href="audit.html"><span>Audit</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -212,12 +161,12 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>Register</h1>
+        <h1>Audit de marque</h1>
         <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p> -->
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Créer un compte</li>
+            <li class="current">Book a call</li> 
           </ol>
         </nav>
       </div>
@@ -231,6 +180,11 @@
         <div class="row gy-4">
 
           <div class="arrow" onclick="location.href='index.html#services';"></div>
+
+          <h2>Audit de marque</h2>
+          <p>
+            L’audit de marque permet d’évaluer de manière approfondi la perception, la position et la performance d’une marque sur le marché. En d’autres termes, Il vise à analyser divers aspects de la marque tel que son identité visuelle, sa communication, sa présence en ligne et l’expérience client. Le contexte commercial actuel étant très concurrentiel, toute entreprise qui veut être pérenne se doit de faire un audit de marque. 
+          </p>
           <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
               <a href="#" class="active">Web Design</a>
@@ -240,70 +194,13 @@
               <a href="#">Marketing</a>
             </div> -->
 
-
-            <div class="login-container">
-            <h1>Créer un compte</h1>
-            
-                <label for="user-type">Select User Type:</label><br>
-                <select id="user-type" name="user_type" required>
-                    <option value="Evaluateur">Evaluateur</option>
-                    <option value="Client">Client</option>
-                </select>
-            </div>
-
-
-            <div class="container2">
-              <!-- <h2>Créer un Compte</h2> -->
-              <form action="/submit_profile" method="POST">
-                <div class="form-group">
-                  <label for="first-name">Prénom</label>
-                  <input type="text" id="first-name" name="first_name" required>
-                </div>
-                <div class="form-group">
-                  <label for="last-name">Nom</label>
-                  <input type="text" id="last-name" name="last_name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Adresse e-mail</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                <!-- <div class="form-group">
-                  <label for="password">Mot de passe</label>
-                  <input type="password" id="password" name="password" required>
-                </div> -->
-                <div class="form-group">
-                  <label for="birth-date">Date de naissance</label>
-                  <input type="date" id="birth-date" name="birth_date" required>
-                </div>
-                <div class="form-group">
-                  <label for="message">Laissez un message</label>
-                  <textarea id="message" name="message" rows="4" placeholder="Votre message..." required></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Envoyer">
-                </div>
-              </form>
-            </div>
-            
-            
-            <!-- <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p> -->
-
-            <!-- <div class="arrow" onclick="location.href='index.html#services';"></div> -->
+            <h4>Book a call with us</h4>
+           <!-- Google Calendar Appointment Scheduling begin -->
+<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0JFAKKREpg1CWFUlMzgBEKF_Lh8x-DJcZI83e8-LavZqkrOaQ41k_chx6FRlQ4ihz0wccG-pcs?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+<!-- end Google Calendar Appointment Scheduling -->
           </div>
+
+          
 
         </div>
 
