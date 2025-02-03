@@ -207,3 +207,38 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+
+
+
+
+function toggleChat() {
+  var chatBox = document.getElementById("chatPopup");
+  chatBox.style.display = (chatBox.style.display === "flex") ? "none" : "flex";
+}
+
+function sendToWhatsApp() {
+  var inputField = document.getElementById("userMessage");
+  var messageText = inputField.value.trim();
+  if (messageText) {
+      var phoneNumber = "+237679827840"; // Change to your WhatsApp number
+      var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(messageText);
+      window.open(whatsappURL, "_blank");
+  } else {
+      alert("Please type a message.");
+  }
+}
+
+function sendToEmail() {
+  var inputField = document.getElementById("userMessage");
+  var messageText = inputField.value.trim();
+  if (messageText) {
+      var email = "admin@bicod.org"; // Change to your email
+      var subject = "New Chat Message";
+      var emailURL = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(messageText);
+      window.open(emailURL, "_blank");
+  } else {
+      alert("Please type a message.");
+  }
+}

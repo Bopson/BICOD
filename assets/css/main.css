@@ -1863,6 +1863,120 @@ section,
   color: var(--accent-color);
 }
 
+
+
+
+
+
+  /* Floating Chat Button */
+  .chat-button {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #0078ff;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Chatbox Popup */
+.chat-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 320px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+}
+
+/* Chatbox Header */
+.chat-header {
+    background: #0078ff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Chatbox Messages */
+.chat-body {
+    padding: 15px;
+    font-size: 14px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.message {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Contact Info */
+.contact-info {
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input button {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Send Options */
+.send-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.send-options button {
+    flex: 1;
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-options button.email {
+    background: #D44638;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/

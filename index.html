@@ -210,6 +210,32 @@
 
     </section><!-- /About Section -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Stats Section -->
     <section id="stats" class="stats section light-background">
 
@@ -694,6 +720,33 @@
       </div>
 
     </section><!-- /Contact Section -->
+
+
+
+
+    
+  <!-- Floating Chat Button -->
+  <div class="chat-button" onclick="toggleChat()">💬</div>
+
+  <!-- Chat Popup -->
+  <div class="chat-popup" id="chatPopup">
+      <div class="chat-header">Chat with Us</div>
+      <div class="chat-body">
+          <div class="message">👋 Welcome! How can we help you?</div>
+      </div>
+      <div class="contact-info">
+          <strong>📍 Address:</strong> Ngousso 5e Arr. Yaoundé, Rue   1640 <br>
+          <strong>📞 Contact:</strong> +237 679 827 840 <br>
+          <strong>📧 Email:</strong> admin@bicod.org
+      </div>
+      <div class="chat-input">
+          <input type="text" id="userMessage" placeholder="Type a message...">
+      </div>
+      <div class="send-options">
+          <button onclick="sendToWhatsApp()">📲 WhatsApp</button>
+          <button class="email" onclick="sendToEmail()">📧 Email</button>
+      </div>
+  </div>
 
   </main>
 
