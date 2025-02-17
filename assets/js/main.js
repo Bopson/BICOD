@@ -242,3 +242,34 @@ function sendToEmail() {
       alert("Please type a message.");
   }
 }
+
+
+
+function sendMail() {
+  document.querySelector(".loading").style.display = "block"; // Show loading text
+
+  let params = {
+    name: document.querySelector("input[name='name']").value,
+    email: document.querySelector("input[name='email']").value,
+    subject: document.querySelector("input[name='subject']").value,
+    message: document.querySelector("textarea[name='message']").value
+  };
+
+  emailjs.send("service_z8hmsjn", "template_m8qzeno", params)
+    .then(function(response) {
+      document.querySelector(".loading").style.display = "none"; // Hide loading
+      document.querySelector(".sent-message").style.display = "block"; // Show success message
+      document.getElementById("contact-form").reset(); // Clear form
+      
+      // ✅ Show confirmation alert
+      alert("Votre message a été envoyé avec succès!");
+
+    }, function(error) {
+      document.querySelector(".loading").style.display = "none"; // Hide loading
+      document.querySelector(".error-message").textContent = "Error sending message. Try again!";
+      document.querySelector(".error-message").style.display = "block"; // Show error message
+
+      // ❌ Show error alert
+      alert("Le message n'a pas été envoyé. Essayez ultérieurement.");
+    });
+}

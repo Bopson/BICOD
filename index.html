@@ -45,6 +45,18 @@
       height: 500px; /* Set the desired height */
       object-fit: cover; /* Ensures the image covers the specified area while maintaining aspect ratio */
     }
+
+
+    @keyframes scaleEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); } /* Increase size */
+    100% { transform: scale(1); } /* Back to normal */
+  }
+
+  h2 {
+    display: inline-block; /* Prevents unwanted stretching */
+    animation: scaleEffect 2s ease-in-out;
+  }
   </style>
 </head>
 
@@ -92,12 +104,12 @@
               <li><a href="mystery_shoping.html">Mystery Shoping</a></li>
 
 
-              <li class="dropdown"><a href="L’excellence de l’expérience client.html"><span>Customer Experience Excellence</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="L'excellence de l'expérience client.html"><span>Customer Experience Excellence</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="Normes internationales en matière d’expérience client .html">International Customer Experience Standard</a></li>
-                  <li><a href="Normes internationales en matière d’expérience client sur les plateformes digitales .html">International Digital Customer Experience Standard (IDCXS2022)
+                  <li><a href="Normes internationales en matière d'expérience client .html">Norme internationale d'expérience client</a></li>
+                  <li><a href="Normes internationales en matière d'expérience client sur les plateformes digitales .html">Norme internationale d'expérience client NUMÉRIQUE (IDCXS2022)
                   </a></li>
-                  <li><a href="Normes internationales de bonheur et de bien-être des salariés .html">International Employee Happiness and Wellbeing Standard (IEHWS2023)</a></li>
+                  <li><a href="Normes internationales de bonheur et de bien-être des salariés .html">Norme de bonheur et de bien-être des employés 2023 (IEHWS2023)</a></li>
                  
                 </ul>
               </li>
@@ -155,7 +167,7 @@
         <h2 data-aos="fade-up" data-aos-delay="100" style="text-align: center;"> Bureau International De Coopération Au Development</h2>
         <p data-aos="fade-up" data-aos-delay="200">Chez BICOD, nous nous engageons à fournir des services de haute qualité, à innover et à établir des partenariats solides pour répondre à vos besoins.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Commencer</a>
+          <a href="#about" class="btn-get-started" style="background-color: yellow;">Commencer</a>
           <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Regarder une vidéo</span></a> -->
         </div>
       </div>
@@ -245,7 +257,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0" style="color: yellow;"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Clients Satisfaits</p>
@@ -255,7 +267,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <i class="bi bi-journal-richtext color-orange flex-shrink-0" style="color: yellow;"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Missions executées</p>
@@ -265,7 +277,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <i class="bi bi-headset color-green flex-shrink-0" style="color: yellow;"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="230" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Nos Elèves</p>
@@ -275,7 +287,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <i class="bi bi-people color-pink flex-shrink-0" style="color: yellow;"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Nos Agents</p>
@@ -308,13 +320,13 @@
                 <img src="assets/img/health2.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-activity"></i>
+                <div class="icon" style="background-color: yellow;">
+                  <i class="bi bi-activity" ></i>
                 </div>
                 <a href="santé.html" class="stretched-link">
                   <h3>l'Ingénierie de la Santé</h3>
                 </a>
-                <p>Concevoir des technologies innovantes, Analyse des données de santé, modélisation des systemes de soins de santé et gestion des technologies médicales.</p>
+                <!-- <p>Concevoir des technologies innovantes, Analyse des données de santé, modélisation des systemes de soins de santé et gestion des technologies médicales.</p> -->
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -325,13 +337,13 @@
                 <img src="assets/img/development_durable.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
-                <div class="icon">
+                <div class="icon" style="background-color: yellow;">
                   <i class="bi bi-broadcast"></i>
                 </div>
                 <a href="developpement_durable.html" class="stretched-link">
                   <h3>L'Ingénierie du développement durable</h3>
                 </a>
-                <p>Optimisation des processus indistruels, reduction de la consomation d'energie, la planification urbaine durable, mise en place des systemes d'energie renouvelables, la conception des batiments ecologiques.</p>
+                <!-- <p>Optimisation des processus indistruels, reduction de la consomation d'energie, la planification urbaine durable, mise en place des systemes d'energie renouvelables, la conception des batiments ecologiques.</p> -->
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -342,13 +354,13 @@
                 <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
-                <div class="icon">
+                <div class="icon" style="background-color: yellow;">
                   <i class="bi bi-easel"></i>
                 </div>
                 <a href="mystery_shoping.html" class="stretched-link">
-                  <h3>La Mystery Shoping</h3>
+                  <h3>Le Mystery Shopping</h3>
                 </a>
-                <p>Evaluation de l'experience Clients des Entreprises</p>
+                <!-- <p>Evaluation de l'experience Clients des Entreprises</p> -->
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -359,13 +371,13 @@
                 <img src="assets/img/iot.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
-                <div class="icon">
+                <div class="icon" style="background-color: yellow;">
                   <i class="bi bi-easel"></i>
                 </div>
                 <a href="Validation des systèmes informatisés (VSI).html" class="stretched-link">
                   <h3>Validation des systèmes informatisés</h3>
                 </a>
-                <p>Gestion des risques , les processus operationnels, la securites informatiques, la conformite reglementation, audit participatif de genre. ISO 9001:2015 ; ISO 27001:2022 ; ISO 14001:2015</p>
+                <!-- <p>Gestion des risques , les processus operationnels, la securites informatiques, la conformite reglementation, audit participatif de genre. ISO 9001:2015 ; ISO 27001:2022 ; ISO 14001:2015</p> -->
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -377,13 +389,13 @@
                 <img src="assets/img/regulatory.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
-                <div class="icon">
+                <div class="icon" style="background-color: yellow;">
                   <i class="bi bi-easel"></i>
                 </div>
                 <a href="formation.html" class="stretched-link">
                   <h3>Formation</h3>
                 </a>
-<p> Ici, vous aurez l'opportunité d'approfondir vos compétences dans des domaines clés où notre cabinet excelle, tels que l'ingénierie de la santé, le développement durable, l'expérience client entre autres.</p>
+<!-- <p> Ici, vous aurez l'opportunité d'approfondir vos compétences dans des domaines clés où notre cabinet excelle, tels que l'ingénierie de la santé, le développement durable, l'expérience client entre autres.</p> -->
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -395,13 +407,13 @@
                 <img src="assets/img/audit.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
-                <div class="icon">
+                <div class="icon" style="background-color: yellow;">
                   <i class="bi bi-easel"></i>
                 </div>
                 <a href="audit.html" class="stretched-link">
                   <h3>Audit</h3>
                 </a>
-                <p>Notre service d'audit vise à évaluer et à améliorer les pratiques et les processus de nos clients dans le cadre de leurs projets. Nous offrons également des services de validation des systèmes informatiques pour garantir la fiabilité et la sécurité des systèmes d'information utilisés dans le cadre de nos activités.</p>
+                <!-- <p>Notre service d'audit vise à évaluer et à améliorer les pratiques et les processus de nos clients dans le cadre de leurs projets. Nous offrons également des services de validation des systèmes informatiques pour garantir la fiabilité et la sécurité des systèmes d'information utilisés dans le cadre de nos activités.</p> -->
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -555,10 +567,10 @@
                 <h4>Marcel Ndongo</h4>
                 <span>CEO</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a> -->
                 </div>
               </div>
             </div>
@@ -571,10 +583,10 @@
                 <h4>Adolph Nkoumou</h4>
                 <span>Directeur d'exploitation et <br> Responsable Qualité et Conformité</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a> -->
                 </div>
               </div>
             </div>
@@ -587,35 +599,18 @@
             <div class="member">
               <div class="pic"><img src="assets/img/total_fin.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Patience Total</h4>
-                <span>Assistante</span>
+                <h4>Patience Totah</h4>
+                <span>Assistante de direction</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a> -->
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="assets/img/benoit_fin.jpeg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Benoît Minet</h4>
-                <span>Responsable Commercial</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
 
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
@@ -625,10 +620,10 @@
                 <h4>Jordan Ladzou</h4>
                 <span>Responsable Commercial et Marketing</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a> -->
                 </div>
               </div>
             </div>
@@ -684,7 +679,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form id="contact-form" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -704,11 +699,11 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <!-- <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" onclick="sendMail()">Send Message</button>
                 </div>
 
               </div>
@@ -765,26 +760,26 @@
             <p><strong>Email:</strong> <span>admin@bicod.org</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/Bicod_Sarl"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/15jJWtQ6X7/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/bicod_sarl/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/bureau-international-de-cooperation-au-developpement/"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Liens utiles</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">A propos</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contactez nous</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#team">Personnel</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Nos Services</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="santé.html">Ingénierie de la Santé</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="developpement_durable.html">Developpement durable</a></li>
@@ -839,6 +834,18 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "b9dfoRnM6cB8SvXUy",
+      });
+   })();
+</script>
 
 </body>
 

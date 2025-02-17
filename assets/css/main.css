@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #000910;
+  --background-color: #280d81;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #28323a;
@@ -385,7 +385,7 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px #280d81;
   }
 
   .navmenu .dropdown ul li {
@@ -541,12 +541,12 @@ h6 {
   }
 
   .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
+    background-color: #280d81;
   }
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: #280d81;
   }
 
   .mobile-nav-active {
@@ -567,7 +567,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: #280d81;
     transition: 0.3s;
   }
 
@@ -1982,4 +1982,25 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+
+
+p, ul, p * {
+  font-size: 18px !important; 
+  font-family: 'Open Sans', sans-serif !important; /* Use a modern, readable font */
+  line-height: 1.9 !important;
+}
+
+
+@keyframes sizeChange {
+  0% { font-size: 30px; }
+  50% { font-size: 50px; } /* Increase */
+  100% { font-size: 30px; } /* Decrease */
+}
+
+h1 {
+  font-size: 30px;
+  animation: sizeChange 2s ease-in-out; /* Runs once over 2 seconds */
 }
