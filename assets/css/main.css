@@ -2008,7 +2008,6 @@ h1 {
 
 
 .slideshow img {
-  width: 100%; /* Adjust size */
-  height: auto;
+  
   transition: opacity 0.5s ease-in-out;
 }
