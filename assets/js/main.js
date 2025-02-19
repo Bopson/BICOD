@@ -273,3 +273,30 @@ function sendMail() {
       alert("Le message n'a pas été envoyé. Essayez ultérieurement.");
     });
 }
+
+
+
+
+
+
+
+  const images = [
+      "assets/img/PHOTO DE COUVERTURE 1.jpg",
+      "assets/img/PHOTO DE COUVERTURE 2.jpg",
+      "assets/img/FORMATION 1.jpg"
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById("slideshow-img");
+
+  function changeImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.style.opacity = 0; // Fade out
+
+      setTimeout(() => {
+          imgElement.src = images[currentIndex];
+          imgElement.style.opacity = 1; // Fade in
+      }, 500); // Transition time (0.5s)
+  }
+
+  setInterval(changeImage, 3000); // Change image every 3 seconds

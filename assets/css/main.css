@@ -2004,3 +2004,11 @@ h1 {
   font-size: 30px;
   animation: sizeChange 2s ease-in-out; /* Runs once over 2 seconds */
 }
+
+
+
+.slideshow img {
+  width: 100%; /* Adjust size */
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+}
