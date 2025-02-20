@@ -36,35 +36,9 @@
   ======================================================== -->
 
 
-
   <style>
 
-
-.container3 {
-            width: 50%;
-        }
-        .module {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 8px;
-            color: white;
-            font-size: 18px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .module:hover {
-            opacity: 0.8;
-        }
-        .green { background-color: #2d6a4f; }
-        .blue { background-color: #1d3557; }
-        .red { background-color: #e63946; }
-        .dark-red { background-color: #a4161a; }
-        .gold { background-color: #b58500; }
-
-
-        .arrow {
+.arrow {
     width: 20px;
     height: 20px;
     border: solid #ccc;
@@ -84,7 +58,236 @@
 
 
 
-.page-title {
+
+
+
+
+
+
+.header1{
+    height: 80px;
+    width: 70%;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.header1 .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: goldenrod;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: goldenrod;
+    color: white;
+}
+.container1{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #333;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+            .header1, .container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #root {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        } */
+        .container8 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 200px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .order-button {
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .order-button:hover {
+            background-color: #218838;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .page-title {
   position: relative;
   width: 100%;
   height: 400px; /* Ajuste selon tes besoins */
@@ -104,6 +307,7 @@
   34%, 66% { background-image: url("assets/img/2.jpg"); }
   67%, 100% { background-image: url("assets/img/3.jpg"); }
 }
+
   </style>
 </head>
 
@@ -208,12 +412,12 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade">
       <div class="container position-relative">
-        <h1>Formations</h1>
+        <h1>Matériels et équipements médicaux</h1>
         <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p> -->
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Accueil</a></li>
-            <li class="current">Formationss</li>
+            <li class="current">Matériels et équipements médicaux</li>
           </ol>
         </nav>
       </div>
@@ -228,95 +432,14 @@
 
           <div class="arrow" onclick="location.href='index.html#services';"></div>
 
-          <!-- <h1>Formations</h1> -->
-          <p>
-            Bienvenue sur la plateforme de formation en ligne de <b>BICOD Sarl</b> !  
-            Nous sommes ravis de vous accueillir parmi notre communauté d'apprenants et de formateurs. Ici, vous aurez l'opportunité d'approfondir vos compétences dans des domaines clés où notre cabinet excelle, tels que l'ingénierie de la santé, le développement durable, l'expérience client entre autres.  <br>
-            Ce lieu d'échange et d'apprentissage a été conçu pour favoriser une ambiance conviviale tout en garantissant un haut niveau de professionnalisme. <br>
-            Notre équipe de formateurs est à votre disposition pour répondre à vos questions et vous accompagner tout au long de votre parcours. Ensemble, engageons-nous vers l'excellence et le succès dans vos projets professionnels.  <br>
-            Bonne formation à tous !
-            
-
-          </p>
-
-
-          <h2>Level 1: Customer Experience Orientation/Operational Program (CXOP)</h2>
-
-          <div class="container3">
-            <a href="#module1" class="module green">Module 1 - Introductory Concepts, Models and Foundations</a>
-            <a href="#module2" class="module blue">Module 2 - Role of Emotions & Customer Psychology</a>
-            <a href="#module3" class="module red">Module 3 - Understanding the Customer Experience</a>
-            <a href="#module4" class="module dark-red">Module 4 - Introduction to Customer Experience Design Elements</a>
-            <a href="#module5" class="module gold">Module 5 - Customer Experience Measures of Success</a>
-
-            <p>3 days (face to face training at venue of choice or virtual)</p>
-        </div>
-
-
-
-
-        <h2>Level 2: Customer Experience Management Program (CXMP)</h2>
-
-        <div class="container3">
-          <a href="#module1" class="module green">Module 1 - CX Management Models and Foundations</a>
-          <a href="#module2" class="module blue">Module 2 - Managing the Understanding of the Customer</a>
-          <a href="#module3" class="module red">Module 3 - Managing Customer Centricity</a>
-          <a href="#module4" class="module dark-red">Module 4 - Managing Customer Emotions</a>
-          <a href="#module5" class="module gold">Module 5 - CX Design</a>
-          <a href="#module1" class="module green">Module 6 - Managing CX Measures of Success</a>
-          <a href="#module2" class="module blue">Module 7 - CX Strategy & Standards</a>
-
-          <p>3 days to 4 days (face to face training at venue of choice or virtual)</p>
-      </div>
 
 
 
 
 
-
-      
-      <h2>Level 3: Customer Experience Leadership Program (CXLP)</h2>
-
-      <div class="container3">
-        <a href="#module1" class="module green">Module 1 - Introduction To Customer Experience</a>
-        <a href="#module2" class="module blue">Module 2 - The Evolution of Customer Experience</a>
-        <a href="#module3" class="module red">Module 3 - Customer Satisfaction, Loyalty & Customer Experience</a>
-        <a href="#module4" class="module dark-red">Module 4 - Customer Experience Measurement Framework</a>
-        <a href="#module5" class="module gold">Module 5 - Customer Experience Strategic Framework</a>
-        <a href="#module1" class="module green">Module 6 - Customer Centricity</a>
-        <a href="#module2" class="module blue">Module 7 - Customer Journey Mapping</a>
-        <a href="#module3" class="module red">Module 8 - Loyalty & Loyalty Management</a>
-        <a href="#module4" class="module dark-red">Module 9 - Customer Centricity Model:Acquisition, Retention & Expansion</a>
-        <a href="#module5" class="module gold">Module 10 - Customer Experience & Emotions</a>
-        <a href="#module1" class="module green">Module 11 - The Neuroscience of Customer Experience</a>
-        <a href="#module2" class="module blue">Module 12 - Customer Experience Strategic Implementation</a>
-       
-      
-
-        <p>10 months of 2 x 2hr session per month (one-to-one, in person or virtual)</p>
-    </div>
-
-
-
-
-
-    <h2> Customer Experience Masterclass</h2>
-
-    <div class="container3">
-      <a href="#module1" class="module dark-red">Customer Experience Management Program (CXMP)</a>
-      <a href="#module2" class="module gold">Customer Experience Operations Program (CXOP)</a>
-      
-      <p>2 days (face to face training at venue of choice or virtual)</p>
-  </div>
-
-
-
-  <h4>Book a call with us</h4>
-  <!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2LGughSAKyTuycvetl1kqlSTZ87TgIorFLtMsN8XEhIQ--tCQ4CqF1r9l1oJMkg-2fEG21lb0f?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-<!-- end Google Calendar Appointment Scheduling -->
-
-
+<h1>Vos Articles Enregistrés</h1>
+<div class="container8" id="orders-container"></div>
+<div id="calendar-button" style="text-align: center; margin-top: 20px;"></div>
 
           <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
@@ -327,32 +450,14 @@
               <a href="#">Marketing</a>
             </div> -->
 
-            
 
-            <!-- <div class="login-container">
 
-              <h1>Login</h1>
-              
-              <form action="/login" method="POST">
-                  <label for="user-type">Select User Type:</label>
-                  <select id="user-type" name="user_type" required>
-                      <option value="Evaluateur">Formateur</option>
-                      <option value="Client">Apprenant</option>
-                  </select>
-      
-                  <label for="username">Username:</label>
-                  <input type="text" id="username" name="username" placeholder="Enter your username" required>
-      
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      
-                  <button type="submit">Login</button>
-              </form>
-      
-              <div class="register-link">
-                  <p>Not registered yet? <a href="register.html">Create an account</a></p>
-              </div>
-          </div> -->
+
+
+
+
+
+
 
 
             
@@ -474,6 +579,65 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+ 
+
+  <script>
+    let savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
+
+    function displayOrders() {
+        const container = document.getElementById("orders-container");
+        container.innerHTML = "";
+        if (savedItems.length === 0) {
+            container.innerHTML = "<p>Aucun article enregistré.</p>";
+            return;
+        }
+        savedItems.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+                <img src="${item.image}" alt="${item.nom}">
+                <h3>${item.nom}</h3>
+                <p>${item.prix}</p>
+                <p>Quantité: ${item.quantity}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function placeOrder() {
+        if (savedItems.length === 0) {
+            alert("Aucun article à commander.");
+            return;
+        }
+        alert("Commande passée avec succès !");
+        localStorage.removeItem("savedItems");
+        savedItems = [];
+        displayOrders();
+    }
+
+    displayOrders();
+</script>
+
+
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+    window.addEventListener('load', function() {
+        let target = document.getElementById('calendar-button');
+        if (target) {
+            calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2LGughSAKyTuycvetl1kqlSTZ87TgIorFLtMsN8XEhIQ--tCQ4CqF1r9l1oJMkg-2fEG21lb0f?gv=true',
+                color: '#039BE5',
+                label: 'Commander',
+                target,
+            });
+        } else {
+            console.error('Élément cible non trouvé pour le bouton de calendrier.');
+        }
+    });
+</script>
+
+
+ 
 </body>
 
 </html>

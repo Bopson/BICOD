@@ -282,8 +282,9 @@ function sendMail() {
 
   const images = [
       "assets/img/PHOTO DE COUVERTURE 1.jpg",
-      "assets/img/PHOTO DE COUVERTURE 2.jpg",
-      "assets/img/FORMATION 1.jpg"
+      "assets/img/hero1.jpg",
+      "assets/img/hero2.jpg",
+      "assets/img/hero3.jpg"
   ];
 
   let currentIndex = 0;

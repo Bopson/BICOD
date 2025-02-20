@@ -234,6 +234,81 @@ button:hover{
         }
 
 
+
+
+
+
+
+
+
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        } */
+        .container5 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+            width: 200px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .cart-button {
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .cart-button:hover {
+            background-color: #0056b3;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .page-title {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajuste selon tes besoins */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  animation: slideBackground 9s infinite;
+}
+
+@keyframes slideBackground {
+  0%, 33% { background-image: url("assets/img/1.jpg"); }
+  34%, 66% { background-image: url("assets/img/2.jpg"); }
+  67%, 100% { background-image: url("assets/img/3.jpg"); }
+}
+
   </style>
 </head>
 
@@ -249,8 +324,8 @@ button:hover{
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#hero" class="active">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
           <!-- <li><a href="#services">Services</a></li> -->
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
          
@@ -297,7 +372,7 @@ button:hover{
 
 
               
-              <li class="dropdown"><a href="formation.html"><span>Formation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="formation.html"><span>Formations</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <!-- <li><a href="calender.html">Système de management de la qualité (SMQ)</a></li>
                   <li><a href="calender.html">Validation des systèmes informatisés
@@ -336,13 +411,13 @@ button:hover{
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+    <div class="page-title dark-background" data-aos="fade">
       <div class="container position-relative">
         <h1>Matériels et équipements médicaux</h1>
         <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p> -->
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li class="current">Matériels et équipements médicaux</li>
           </ol>
         </nav>
@@ -359,7 +434,7 @@ button:hover{
           <div class="arrow" onclick="location.href='index.html#services';"></div>
 
 
-          <h4>Matériels et équipements médiaux</h4>
+          <h4>Matériels et équipements médicaux</h4>
 <p>
   Salut, bienvenue dans notre boutique en ligne, où la technologie et l’excellence de la santé se rencontrent ! Chez <b>BICOD Sarl</b>, nous vous offrons une sélection de matériel et d’équipements médicaux de qualité supérieure.
 Que vous soyez professionnel de santé ou particulier soucieux de votre bien-être, notre gamme variée répond à tous vos besoins. Grâce à notre expertise, nous vous proposons des produits innovants et fiables pour simplifier vos activités quotidiennes. 
@@ -370,25 +445,7 @@ Explorez notre Medshop pour découvrir des équipements adaptés à chaque exige
 
 
 
-          <div class="header1">
-            <!-- <p class="logo">LOGO</p> -->
-            <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
-              <p id="count">0</p>
-            </div>
-          </div>
-          <div class="container1">
-            <div id="root"></div>
-            <div class="sidebar">
-              <div class="head">
-                <p>My Cart</p>
-              </div>
-              <div id="cartItem">Your cart is empty</div>
-              <div class="foot">
-                <h3>Total</h3>
-                <h2 id="total">$ 0.00</h2>
-              </div>
-            </div>
-          </div>
+<div class="container5" id="items-container"></div>
           <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
               <a href="#" class="active">Web Design</a>
@@ -462,7 +519,7 @@ Explorez notre Medshop pour découvrir des équipements adaptés à chaque exige
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Liens utiles</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Accueil</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#about">A propos</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contactez nous</a></li>
@@ -527,94 +584,48 @@ Explorez notre Medshop pour découvrir des équipements adaptés à chaque exige
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    const items = [
+        { id: 1, nom: "Téléphone", prix: "699€", image: "assets/img/portfolio/app-1.jpg" },
+        { id: 2, nom: "Ordinateur Portable", prix: "1299€", image: "assets/img/portfolio/app-2.jpg" },
+        { id: 3, nom: "Écouteurs", prix: "199€", image: "assets/img/portfolio/app-3.jpg" },
+        { id: 4, nom: "Montre Connectée", prix: "299€", image: "assets/img/portfolio/books-1.jpg" },
+    ];
+
+    function displayItems() {
+        const container = document.getElementById("items-container");
+        container.innerHTML = "";
+        items.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+                <img src="${item.image}" alt="${item.nom}" onclick="redirectToCart(${item.id})">
+                <h3>${item.nom}</h3>
+                <p>${item.prix}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function redirectToCart(id) {
 
 
+        let selectedItem = items.find(i => i.id === id);
+    if (!selectedItem) {
+        console.error("Item not found!");
+        return;
+    }
+    
+    localStorage.setItem("selectedItem", JSON.stringify(selectedItem));
+    console.log("Redirection vers cart.html avec l'item:", selectedItem);
+    window.location.href = "cart.html";
+    }
 
-
-
-<script>
-
-const product = [
-  {
-    id: 0,
-    image: 'assets/img/portfolio/app-1.jpg',
-    title: 'Z Flip Foldable Mobile',
-    price: 120,
-  },
-  {
-    id: 1,
-    image: 'assets/img/portfolio/app-2.jpg',
-    title: 'Air Pods Pro',
-    price: 60,
-  },
-  {
-    id: 2,
-    image: 'assets/img/portfolio/app-3.jpg',
-    title: '250D DSLR Camera',
-    price: 230,
-  },
-  {
-    id: 3,
-    image: 'assets/img/portfolio/books-1.jpg',
-    title: 'Head Phones',
-    price: 100,
-  }
-];
-const categories = [...new Set(product.map((item) => { return item }))]
-let i = 0;
-document.getElementById('root').innerHTML = categories.map((item) => {
-  var { image, title, price } = item;
-  return (
-    `<div class='box'>
-      <div class='img-box'>
-        <img class='images' src=${image}></img>
-      </div>
-      <div class='bottom'>
-        <p>${title}</p>
-        <h2>$ ${price}.00</h2>` +
-        "<button onclick='addtocart(" + (i++) + ")'>Add to cart</button>" +
-      `</div>
-    </div>`
-  )
-}).join('')
-
-var cart = [];
-
-function addtocart(a) {
-  cart.push({ ...categories[a] });
-  displaycart();
-}
-function delElement(a) {
-  cart.splice(a, 1);
-  displaycart();
-}
-
-function displaycart() {
-  let j = 0, total = 0;
-  document.getElementById("count").innerHTML = cart.length;
-  if (cart.length == 0) {
-    document.getElementById('cartItem').innerHTML = "Your cart is empty";
-    document.getElementById("total").innerHTML = "$ " + 0 + ".00";
-  }
-  else {
-    document.getElementById("cartItem").innerHTML = cart.map((items) => {
-      var { image, title, price } = items;
-      total = total + price;
-      document.getElementById("total").innerHTML = "$ " + total + ".00";
-      return (
-        `<div class='cart-item'>
-          <div class='row-img'>
-            <img class='rowimg' src=${image}>
-          </div>
-          <p style='font-size:12px;'>${title}</p>
-          <h2 style='font-size: 15px;'>$ ${price}.00</h2>` +
-        "<i class='fa-solid fa-trash' onclick='delElement(" + (j++) + ")'></i></div>"
-      );
-    }).join('');
-  }
-}
-
+    displayItems();
 </script>
+
+
+
 
 
  

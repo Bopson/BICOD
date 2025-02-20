@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commandes</title>
+
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 200px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .order-button {
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .order-button:hover {
+            background-color: #218838;
+        }
+
+
+        .arrow {
+            padding-left: 0;
+    width: 20px;
+    height: 20px;
+    border: solid #ccc;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    border-color: #007BFF;
+    transform: rotate(135deg) scale(1.1);
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="arrow" onclick="location.href='cart.html';"></div>
+    <h1>Vos Articles Enregistrés</h1>
+    <div class="container" id="orders-container"></div>
+    <!-- <button class="order-button" onclick="placeOrder()">Commander</button> -->
+
+    <script>
+        let savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
+
+        function displayOrders() {
+            const container = document.getElementById("orders-container");
+            container.innerHTML = "";
+            if (savedItems.length === 0) {
+                container.innerHTML = "<p>Aucun article enregistré.</p>";
+                return;
+            }
+            savedItems.forEach(item => {
+                const card = document.createElement("div");
+                card.className = "card";
+                card.innerHTML = `
+                    <img src="${item.image}" alt="${item.nom}">
+                    <h3>${item.nom}</h3>
+                    <p>${item.prix}</p>
+                    <p>Quantité: ${item.quantity}</p>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function placeOrder() {
+            if (savedItems.length === 0) {
+                alert("Aucun article à commander.");
+                return;
+            }
+            alert("Commande passée avec succès !");
+            localStorage.removeItem("savedItems");
+            savedItems = [];
+            displayOrders();
+        }
+
+        displayOrders();
+    </script>
+
+
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2LGughSAKyTuycvetl1kqlSTZ87TgIorFLtMsN8XEhIQ--tCQ4CqF1r9l1oJMkg-2fEG21lb0f?gv=true',
+      color: '#039BE5',
+      label: 'Commander',
+      target,
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
