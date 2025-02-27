@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#login-panel, #admin-panel {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.logout-btn {
+    background: #dc3545;
+}
+
+.post {
+    background: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <h1>My Blog</h1>
+
+        <!-- Login Section (Hidden by default) -->
+        <div id="login-panel">
+            <h2>Admin Login</h2>
+            <input type="password" id="admin-password" placeholder="Enter password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Admin Panel (Hidden unless logged in) -->
+        <div id="admin-panel" style="display: none;">
+            <h2>Add a New Post</h2>
+            <input type="text" id="title" placeholder="Post Title">
+            <textarea id="content" placeholder="Write your post here..."></textarea>
+            <button onclick="addPost()">Publish</button>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+
+        <h2>Blog Posts</h2>
+        <div id="blog-posts"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    loadPosts();
+    checkAdminStatus();
+});
+
+const ADMIN_PASSWORD = "admin123"; // Change this to your desired password
+
+function login() {
+    let enteredPassword = document.getElementById("admin-password").value;
+
+    if (enteredPassword === ADMIN_PASSWORD) {
+        localStorage.setItem("isAdmin", "true");
+        checkAdminStatus();
+    } else {
+        alert("Incorrect password!");
+    }
+}
+
+function logout() {
+    localStorage.removeItem("isAdmin");
+    checkAdminStatus();
+}
+
+function checkAdminStatus() {
+    let isAdmin = localStorage.getItem("isAdmin") === "true";
+
+    document.getElementById("login-panel").style.display = isAdmin ? "none" : "block";
+    document.getElementById("admin-panel").style.display = isAdmin ? "block" : "none";
+}
+
+function addPost() {
+    let title = document.getElementById("title").value;
+    let content = document.getElementById("content").value;
+
+    if (title.trim() === "" || content.trim() === "") {
+        alert("Please fill in both fields.");
+        return;
+    }
+
+    let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+
+    let newPost = { title, content, date: new Date().toLocaleString() };
+    posts.unshift(newPost);
+
+    localStorage.setItem("blogPosts", JSON.stringify(posts));
+
+    document.getElementById("title").value = "";
+    document.getElementById("content").value = "";
+
+    loadPosts();
+}
+
+function loadPosts() {
+    let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+    let blogPostsDiv = document.getElementById("blog-posts");
+    blogPostsDiv.innerHTML = "";
+
+    let isAdmin = localStorage.getItem("isAdmin") === "true"; // Check if admin
+
+    posts.forEach((post, index) => {
+        let postDiv = document.createElement("div");
+        postDiv.classList.add("post");
+        postDiv.innerHTML = `
+            <h3>${post.title}</h3>
+            <p>${post.content}</p>
+            <small>${post.date}</small>
+            <br>
+            ${isAdmin ? `<button onclick="deletePost(${index})">Delete</button>` : ""}
+        `;
+        blogPostsDiv.appendChild(postDiv);
+    });
+}
+
+
+function deletePost(index) {
+    let posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+    posts.splice(index, 1);
+    localStorage.setItem("blogPosts", JSON.stringify(posts));
+    loadPosts();
+}
+
+    </script>
+</body>
+</html>

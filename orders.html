@@ -71,7 +71,7 @@
     <div class="arrow" onclick="location.href='cart.html';"></div>
     <h1>Vos Articles Enregistrés</h1>
     <div class="container" id="orders-container"></div>
-    <!-- <button class="order-button" onclick="placeOrder()">Commander</button> -->
+    <button class="order-button" onclick="placeOrder()">Effacer</button>
 
     <script>
         let savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
@@ -101,7 +101,7 @@
                 alert("Aucun article à commander.");
                 return;
             }
-            alert("Commande passée avec succès !");
+            // alert("Commande passée avec succès !");
             localStorage.removeItem("savedItems");
             savedItems = [];
             displayOrders();
